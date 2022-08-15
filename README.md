@@ -1,6 +1,6 @@
-# html-css-js-project-boilerplate
+
 Flappy Bird Game
-    Its a simple game. if the bird touch the bottom or top of screen then game over, and if bird touch the pillars then also game over.
+    Its a simple game. if the bird touch the bottom or top of screen then game over, or if bird touch the pillars then also game over.
 
 Tech stack:
     HTMl, CSS, JS
