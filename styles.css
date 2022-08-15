@@ -1,1 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+.background{
+    height: 100vh;
+    width: 100vw;
+    background: url('img/background.jpg') no-repeat center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.bird{
+    height: 80px;
+    width: 100px;
+    position: fixed;
+    top: 40vh;
+    left: 30vw;
+}
+/* below class and id is not in html */
+
+.pipe_sprite{
+    position: fixed;
+    top: -30vh;
+    left: 100vw;
+    height: 70vh;
+    width: 7vw;
+}
+#im1{
+    height: 70vh;
+    width: 100%;
+    transform: rotate(180deg);
+}
+#im2{
+    height: 70vh;
+    width: 100%;
+    transform: rotate(360deg);
+}
+
+.messageStyle{
+    background: white;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, .24) 0 3px 8px;
+}
+
+/* above style is not in html */
+.message{
+    position: absolute;
+    z-index: 10;
+    color: black;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.score{
+    position: fixed;
+    z-index: 10;
+    height: 10vh;
+    font-size: 10vh;
+    font-weight: 100;
+    color: white;
+    -webkit-text-stroke-width:2px;
+    -webkit-text-stroke-color:black;
+    top: 0;
+    right: 0;
+    margin: 10px;
+}
+
+.score_val{
+    color: gold;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1080px) {
+    .message{
+        top: 50%;
+        white-space: nowrap;
+    }
+
+    .score{
+        font-size: 8vh;
+    }
+
+    .bird{
+        width: 120px;
+        height: 90px;
+    }
+
+    .pipe_sprite{
+        width: 8vw;
+    }
+}
