@@ -16,8 +16,8 @@ message.classList.add('messageStyle');//to add a class
 
 document.addEventListener('keydown', (e)=>{
     // Start the game if enter key is pressed
-    //jbb tak hmm enter press nhi karenge game start nhi hoga
-    if(e.key == 'Enter' && game_state != 'Play')//doubt e.key == Enter
+    //jbb tak hmm enter nhi karenge game start nhi hoga
+    if((e.key == 'Enter' || e.key == ' ')&& game_state != 'Play')//doubt e.key == Enter
     {
         document.querySelectorAll('.pipe_sprite').forEach((e)=>{
             e.remove();
