@@ -14,10 +14,10 @@ let game_state = 'Start';
 image.style.display = 'none';
 message.classList.add('messageStyle');//to add a class 
 
-document.addEventListener('keydown', (e)=>{
+document.addEventListener('click', (e)=>{
     // Start the game if enter key is pressed
     //jbb tak hmm enter nhi karenge game start nhi hoga
-    if((e.key == 'Enter' || e.key == ' ')&& game_state != 'Play')//doubt e.key == Enter
+    if((e.key == 'Enter')&& game_state != 'Play')//doubt e.key == Enter
     {
         document.querySelectorAll('.pipe_sprite').forEach((e)=>{
             e.remove();
