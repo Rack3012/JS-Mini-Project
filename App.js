@@ -14,7 +14,7 @@ let game_state = 'Start';
 image.style.display = 'none';
 message.classList.add('messageStyle');//to add a class 
 
-document.addEventListener('click', (e)=>{
+document.addEventListener('keydown', (e)=>{
     // Start the game if enter key is pressed
     //jbb tak hmm enter nhi karenge game start nhi hoga
     if((e.key == 'Enter')&& game_state != 'Play')//doubt e.key == Enter
@@ -58,7 +58,7 @@ function play(){
                         
                     game_state = 'End';
                     message.innerHTML = 'Game Over'.fontcolor('red') + '<br>Press Enter to Restart'
-                    console.log("a................................................bh");
+                   // console.log("a................................................bh");
                     message.classList.add('messageStyle')
                     image.style.display = 'none';
                     return;
@@ -69,7 +69,7 @@ function play(){
                         && pipe_sprite_props.right + move_speed >= bird_props.left
                         && element.increase_score == '1'// increase_score == 1 create_pipe() se aa rha h
                         ){
-                            console.log("a................................................zzz");
+                           // console.log("a................................................zzz");
                             score_val.innerHTML =+ score_val.innerHTML+2;
                         }
                         element.style.left = pipe_sprite_props.left - move_speed +'px';
